@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 /* -------- Global Styles -------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", Arial, sans-serif;
+=======
+h1 {
+    color: #ba2121;
+>>>>>>> 0cdd27f9635fc6de1447cce791e9a2b61221268f
 }
 
 body {
