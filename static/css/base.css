@@ -1,7 +1,142 @@
-h1 {
-    color: #ba2121;
+/* -------- Global Styles -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
 }
-.mylogo {
-    height: 300px;
-    width: auto;
+
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+/* -------- Navbar -------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: linear-gradient(90deg, #1e1e2f, #2b2b45);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container:hover .logo-img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 126, 179, 0.7);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f9c5d1;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo span {
+    color: #ff7eb3;
+}
+
+.logo-container:hover .logo {
+    color: #ff7eb3;
+}
+
+/* -------- Navbar Links -------- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d1d1e0;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7eb3;
+    transform: translateY(-2px);
+}
+
+/* -------- Hero Section -------- */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, #2b2b45, #121212);
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #ff7eb3, #9b59b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #d1d1e0;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff7eb3;
+    color: #121212;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 126, 179, 0.3);
+}
+
+.btn:hover {
+    background-color: #f9c5d1;
+    color: #1a1a1a;
+    box-shadow: 0 6px 15px rgba(255, 126, 179, 0.5);
+}
+
+/* -------- Footer -------- */
+footer {
+    background-color: #1e1e2f;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #d1d1e0;
+}
+
+footer span {
+    color: #ff7eb3;
 }
